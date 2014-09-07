@@ -1,0 +1,6 @@
+# for Linux
+
+cd HomeworkIntroductionToJava/src/
+javac SumTwoNumbers.java
+
+java SumTwoNumbers

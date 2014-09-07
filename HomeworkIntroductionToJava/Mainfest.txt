@@ -1,0 +1,9 @@
+Name: DeckOfCards
+Specification-Title: Java Classes
+Specification-Version: 1.8
+Specification-Vendor: VeCoder.com
+Implementation-Title: Deck of cards
+Implementation-Version: 1.0.0
+Implementation-Vendor: VeCoder.com
+Class-Path: lib/itextpdf-5.5.2.jar
+Main-Class: DeckOfCards

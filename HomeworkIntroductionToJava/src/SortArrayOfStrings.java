@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SortArrayOfStrings {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		int n = input.nextInt();
+		String[] strings = new String[n];
+		
+		input.nextLine();
+		
+		for (int i = 0; i < n; i++) {
+			String str = input.nextLine();
+			strings[i] = str;
+		}
+		
+		Arrays.sort(strings);
+
+		for (String str : strings) {
+			System.out.println(str);
+		}
+
+	}
+
+}

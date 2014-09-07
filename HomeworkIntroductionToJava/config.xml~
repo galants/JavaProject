@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <headerType>console</headerType>
+  <jar>DeckOfCards.jar</jar>
+  <outfile>DeckOfCard</outfile>
+  <jre>
+    <minVersion>1.8.0</minVersion>
+  </jre>
+</launch4jConfig>

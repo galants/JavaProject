@@ -1,0 +1,3 @@
+#!/bin/bash
+
+javac -cp ./lib/*.jar src/$1
