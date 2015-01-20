@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+	<f:view>
+		<ui:composition template="/WEB-INF/templates/template.xhtml">
+		    <ui:define name="content">
+				<div class="greeting">
+						<h:outputText value="Приятна игра #{user.name} !"></h:outputText>
+				</div>
+				<h:form id="form">
+					<h:panelGrid columns="3" captionClass="game" >
+						<h:commandButton id="feld_0" image="#{game.images[0]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_1" image="#{game.images[1]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_2" image="#{game.images[2]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_3" image="#{game.images[3]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_4" image="#{game.images[4]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_5" image="#{game.images[5]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_6" image="#{game.images[6]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_7" image="#{game.images[7]}" actionListener="#{game.clickActionEvent}" />
+						<h:commandButton id="feld_8" image="#{game.images[8]}" actionListener="#{game.clickActionEvent}" />
+					</h:panelGrid>
+					<div class="center message">
+						<h:outputText value="#{game.message}"></h:outputText>
+					</div>
+					<div class="center">
+						<h:commandButton value="New game" action="#{game.clear}"></h:commandButton>
+					</div>
+				</h:form>
+			</ui:define>
+		</ui:composition>
+	</f:view>
+
+</html>

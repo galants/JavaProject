@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view>
+	<ui:composition template="/WEB-INF/templates/template.xhtml">
+	    <ui:define name="content">
+	        <h:form id="user-form">
+		        <div>
+	                <h:outputText value="Потребител "></h:outputText>
+	                <h:inputText value="#{user.name}"></h:inputText>
+		        </div>
+		        <div>
+		        	<h:commandButton value="Login" action="game"></h:commandButton>
+		        </div>
+			</h:form>
+	    </ui:define>
+	</ui:composition>
+</f:view>
+</html>
